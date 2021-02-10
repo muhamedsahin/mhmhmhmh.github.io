@@ -1,2 +1,166 @@
 meraba
 
+<html>
+
+
+
+
+
+
+
+
+
+
+
+
+    <head>
+        <title>MFŞ</title>
+<style tyle="" type="text/css">
+a:linka,a:visited
+{
+background-color: #f44336;
+color:white;
+padding: 15px 25px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+}
+a:hover{
+background-color: red;
+color: white;
+
+}
+</style>
+
+
+       <title>MFŞ</title>
+
+<style>
+ul{list-style: none;
+padding-left: 0;
+}
+ul li {
+display: inline-block;
+width: 320px;
+height: 50px;
+}
+</style>
+
+
+
+<meta charset="utf-8"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <meta name="viewport" content="width=device-width, initial-scale=1"> <meta name="description" content="Entry challenge for joining Hack The Box. You have to hack your way in!"> <meta name="keywords" content="pen testing,hack,hacking,penetration testing,infosec,information security,labs"> <meta name="author" content="Hack The Box"> <meta name="google-site-verification" content="ut2KvZ-Bku4Vdbk1hfkkiX6W_Gb_9-CR9UD8ZU4B0mU"> <meta property="og:title" content="Can you hack this box?"> <meta property="og:url" content="https://www.hackthebox.eu"> <meta property="og:image" content="https://www.hackthebox.eu/images/favicon.png"> <meta property="og:site_name" content="Hack The Box"> <meta property="fb:app_id" content="269224263502219"> <meta property="og:description" content="An online platform to test and advance your skills in penetration testing and cyber security."> <meta name="csrf-token" content="27giDYJXLVm8w84rdCcgbbIihMxQ3zvdBxFEpF1d"> <meta name="wot-verification" content="1eeefbec1f6305acd476"> <script type="text/javascript" async="" src="https://www.googleadservices.com/pagead/conversion_async.js"></script><script type="text/javascript" async="" src="https://cdn.segment.com/analytics.js/v1/0TfpkI8Z8dM5cArXmzVpfEBmj10vpbfI/analytics.min.js"></script><script type="text/javascript" async="" src="https://www.googleadservices.com/pagead/conversion_async.js"></script><script async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="https://cdn.segment.com/analytics.js/v1/0TfpkI8Z8dM5cArXmzVpfEBmj10vpbfI/analytics.min.js"></script><script type="application/ld+json"> { "@context": "http://schema.org", "@type": "Organization", "url": "https://www.hackthebox.eu", "name": "Hack The Box", "contactPoint": [{ "@type": "ContactPoint", "telephone": "+44-203-6178-265", "contactType": "emergency" }], "sameAs": [ "https://www.facebook.com/hackthebox.eu", "https://www.linkedin.com/company/hackthebox", "https://twitter.com/hackthebox_eu" ], "logo": "https://www.hackthebox.eu/images/favicon.png", "description": "An online platform to test and advance your skills in penetration testing and cyber security.", "founder": { "@type": "Person", "name": "Haris Pylarinos" }, "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.95", "bestRating": "5", "worstRating": "1", "ratingCount": "797" } } </script> <script> !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t,e){var n=document.createElement("script");n.type="text/javascript";n.async=!0;n.src="https://cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(n,a);analytics._loadOptions=e};analytics.SNIPPET_VERSION="4.1.0"; analytics.load("0TfpkI8Z8dM5cArXmzVpfEBmj10vpbfI"); analytics.page("Invite"); }}(); </script> <title>Hack The Box :: Can you hack this box?</title> <link rel="canonical" href="https://www.hackthebox.eu/invite"> <style type="text/css"> body { overflow-y: unset!important; } .particles_full { position: fixed; top: 0; left: 0; right: 0; bottom: 0; z-index: -1!important; } </style> <link rel="stylesheet" href="https://www.hackthebox.eu/css/htb-frontend.css"> <link rel="stylesheet" href="https://www.hackthebox.eu/css/icons.css"> <link rel="icon" href="/images/favicon.png"> <script async="" src="https://www.googletagmanager.com/gtag/js?id=AW-757546894"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-757546894'); </script> <script src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/757546894/?random=1612451273211&amp;cv=9&amp;fst=1612451273211&amp;num=1&amp;bg=ffffff&amp;guid=ON&amp;resp=GooglemKTybQhCsO&amp;u_h=768&amp;u_w=1366&amp;u_ah=728&amp;u_aw=1366&amp;u_cd=24&amp;u_his=5&amp;u_tz=180&amp;u_java=false&amp;u_nplug=3&amp;u_nmime=4&amp;gtm=2oa1r0&amp;sendb=1&amp;ig=1&amp;data=event%3Dgtag.config&amp;frm=0&amp;url=https%3A%2F%2Fwww.hackthebox.eu%2Finvite&amp;ref=https%3A%2F%2Fwww.hackthebox.eu%2Flogin&amp;tiba=Hack%20The%20Box%20%3A%3A%20Can%20you%20hack%20this%20box%3F&amp;hn=www.googleadservices.com&amp;async=1&amp;rfmt=3&amp;fmt=4"></script>
+   
+
+
+
+
+
+<style>
+.arkaplan {
+width: 1300px;
+height: 300px;
+background: url(https://lh3.googleusercontent.com/dkD5d5G4plv1TVyxZVrd3X3gWNSuWUekfmOBgMK97steV13CwbbZUw3pIl9dpDlAKiIaWhesyiMu39aUDLcoKloErTV_jIEy653TnAg8EZGeCf_FW7gTsehsRcmlbscpoGkFQZrHVYVc7Wb5s_xV3iTbVAnKgCa5I4-VgSzoxkQfgQTQ7YHQbCZgzTzVgcWPIh2SMVlxx2dGeps10ZEku4BOfCeprtBK8R5DrjaMzvUzveZVOJsvLhCv5DlkTnwGAdKz6X9gT2XelJln5heVwqeogXEOa955zWRYzlBUxZ1L5uubxWOERO0yYRDdHsl1L3vcsX3BMKmlMCSJN3AcDNnV7XKb9jT-gfJaUpo-GdLQC-FSJYFPgSOTdfRdJcGCMp_H4vdC3LxhTGCe-YEraiUcayezUKpct6pKU_r9zJZo0dapGw8TLYs3sRJ_QaWhIz7l5LKAmCIyvvlcd8G3O0U8fqrhkNe04hHX5CLOc7dy1_rowrwmjrJBIX5VtxIkd2ziwy2bgz5-28HsS2WWDERmIuxuAHhZEiRQ3qsJxZdvzIwbngnJsNZoyMc9WwwriaWg_8Vx2BKHKhGlYBHl9hJPvIH2uxWhiLgIZt3X4wkx95PHhTr0RCTXx4zrVGtGU4OCGAXQulb7clOEUenXG-8GbkG_V9aC-wpXokyZlsydniht_jTa9e_y1TAa=w904-h625-no?authuser=0) no-repeat;
+background-attachment:fixed;
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <script src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/757546894/?random=1612731236774&amp;cv=9&amp;fst=1612731236774&amp;num=1&amp;bg=ffffff&amp;guid=ON&amp;resp=GooglemKTybQhCsO&amp;u_h=768&amp;u_w=1366&amp;u_ah=728&amp;u_aw=1366&amp;u_cd=24&amp;u_his=21&amp;u_tz=180&amp;u_java=false&amp;u_nplug=3&amp;u_nmime=4&amp;gtm=2oa1r0&amp;sendb=1&amp;ig=1&amp;data=event%3Dgtag.config&amp;frm=0&amp;url=https%3A%2F%2Fmuhamedsahin.github.io%2FMFS-SITE-PRO%2F&amp;ref=https%3A%2F%2Fgithub.com%2Fmuhamedsahin%2FMFS-SITE-PRO%2Fsettings&amp;tiba=MF%C5%9E&amp;hn=www.googleadservices.com&amp;async=1&amp;rfmt=3&amp;fmt=4"></script>
+<link rel="stylesheet" type="text/css" href="cssyeni/loginstyle.css?v=1.0">
+       <title>MFŞ</title>
+<link rel="stylesheet" href="https://www.hackthebox.eu/css/icons.css">
+</head>
+<body background="https://lh3.googleusercontent.com/MSdxRiTVKjQ5BxRe-HYLYXE-OClkHz86slrjl7xF2M1cHGw05n1BKWXzg-cW2XqSoUCz2xFRQnYnaEDnmI391pwOd53ECM4UOWphRdirh_Cupn7ThbkMzAdT2Lwi9pI7bvKfEnVk1HrMMuF4yluBpkhwJtgSdd7wXHFr4pkCzWh6OIRQc9brzWtEBQo_hOpzT8dOO0JvEOQz4ZlwhqJ8ZNtPh51whnlnQFktjPjue7-7pBPJAq6XdCjljbIQNwrs3MEYt51sJ-00rpZxNPynO61z5YwKyxdvNg_pfm_8qhSlod_Famzv20ocwae9OKoax1r6if1-rp_2PmClz7uWyEQ1Y7yra5ovAc8ax7CpSPfhhWmR5W5LC5Mj_IPSnEPMyhRbfhkYYYckJm3NKGjPJGX37QYix0Fra4UNiOl7KD_SBQeWTOuZXYC6Q9yKU2Rjiwn6-3iXU6aji32kQtQ9OiMe6phXPDLMJpHrZa6cOgJuy8lECNqZ0zcwx1IIbkL82Gktzhi9b8dK6aPrYApxvI69Dr5OaDfGSgX8qwWFdnbBk1zKGnuLkACd0pmxUS6Mtv9FYB2WdAV74f7vnFQ_pwIQ7rUX6tOdxkLZSYDkPPN05_nW3v3PdmI6_xqGtEJqHDJrgTv8UJHx2ehkirK0W5Y_AG4HU7V086JpndSwOf-cepgdDSu-i-zQFJO5=w1338-h625-no?authuser=0">
+    <div class="arkaplan"></div>
+
+</div>
+
+
+   <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neon</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="hero">
+<ul>
+<li><a href="#">{ANA SAYFA}</a></li>
+<li><a class="aJHbb dk90Ob jgXgSe HlqNPb" jsname="QwLHlb" role="link" tabindex="0" href="https://sites.google.com/view/mfsanafayfa/youtube-kanal%C4%B1m?authuser=0" data-url="/view/mfsanafayfa/youtube-kanalım?authuser=0" data-type="1" title="youtube kanalım" jsaction="keydown:mPuKz; click:vHQTA;" data-level="1">{youtube kanalım}</a></li>
+<li><a href="#">{YAZILIM NEDİR}</a></li>
+<li><a href="#">{HAKIMIZDA}</a></li>
+</ul>
+<center>
+<h1>
+    <div class="neon">
+        <span class="metin" data-metin="MFŞWEB SİTE NASIL YAPILIRMFŞ">MFŞWEB SİTE NASIL YAPILIRMFŞ</span>
+        <span class="renk"></span>
+        <span class="parilti"></span>
+    </div>
+</h1>
+</center>    
+<center>
+ <img src="https://www.biltektasarim.com/biltek3/dosyalar/blog_manset/web_sitesi_nasil_yapiliyor.jpg">
+</center>
+
+
+
+
+<center>
+<h3>ilk olarak html kodunu bilmeniz lazım kanalımda bunun </h3>
+<h3>için kanalımda videolarım var ordan baka bilirsiniz !! </h3>
+<center>
+<button onclick="window.location.href='https://www.youtube.com/channel/UC_5HdhZPJMSkgo5ZGVvOOlw'">YOUTUBE KANALIM</button>
+</center>
+</center>
+<center>
+    <h1>
+        <div class="neon">
+            <span class="metin" data-metin="BENİM PIROGRAMA İHTİYACIM">BENİM PIROGRAMA İHTİYACIM</span>
+            <span class="renk"></span>
+            <span class="parilti"></span>
+        </div>
+    </h1>
+    </center>  
+    <center>
+        <h1>
+            <div class="neon">
+                <span class="metin" data-metin="VAR">VAR</span>
+                <span class="renk"></span>
+                <span class="parilti"></span>
+            </div>
+        </h1>
+        </center>  
+        
+        <center>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/1200px-Visual_Studio_Code_1.35_icon.svg.png"height="350" width="475">
+           </center> 
+           <center>
+            <h1>VS CODE</h1>
+           <h3>VS code nedir  site yaperken kulanacanız pırofosyonel pırogramlardan biri olan benimde sık sık kulandıgım pırogramlardan biridir </h3>
+           <h3>kulanmak için html kodu bilmeniz lazım gözünüz korkmasın inenılmaz kolay lodlarla yapa bilirsiniz mesela</h3>
+          <h3>bu kod yazı yazmanız saglar (<) buna basın (h) yazın ve (3) yazın ve bunu koyun (>) parantezleri koymayın aynı şekilde (<) buna basın buna basın(/) (h) yazın ve (3) yazın ve bunu koyun (>) parantezleri koymayın </h3>
+           </center> 
+           <center>
+            <img src="https://i.hizliresim.com/wwyAyG.png"height="350" width="475">
+           </center>
+            
+           
+        
+           
+            
+             
+ </body>
+ </html>
